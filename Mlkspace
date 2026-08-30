@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malik's Learning World 🌎</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <nav>
+    <div class="logo">🌎 Malik's Learning World</div>
+    <div class="nav-links">
+      <a href="#games">Games</a>
+      <a href="#worlds">Worlds</a>
+      <a href="#parents">Parents</a>
+    </div>
+  </nav>
+  <div class="hero-content">
+    <div>
+      <span class="pill">🎮 LEARN • PLAY • EXPLORE</span>
+      <h1>
+        Learning is an
+        <br>
+        <span>Adventure!</span>
+      </h1>
+      <p>
+        Fun educational games, challenges, and creative activities
+        made to help kids learn while they play.
+      </p>
+      <a class="button" href="#games">🚀 Start Playing</a>
+    </div>
+    <div class="planet">🌎</div>
+  </div>
+</header>
+
+<main>
+<section class="stats">
+  <div>
+    ⭐ <b id="xp">0</b>
+    <small>XP Earned</small>
+  </div>
+  <div>
+    🪙 <b id="coins">0</b>
+    <small>Learning Coins</small>
+  </div>
+  <div>
+    🏆 <b id="level">1</b>
+    <small>Level</small>
+  </div>
+</section>
+
+<section id="games">
+  <div class="section-title">
+    <span>🎮</span>
+    <div>
+      <h2>Game Zone</h2>
+      <p>Pick a game and start your learning adventure!</p>
+    </div>
+  </div>
+  <div class="grid">
+    <article class="card">
+      <div class="icon">🔢</div>
+      <h3>Math Challenge</h3>
+      <p>Add, subtract, multiply, and think fast!</p>
+      <button onclick="openMath()">Play Now</button>
+    </article>
+    <article class="card">
+      <div class="icon">📚</div>
+      <h3>Word Builder</h3>
+      <p>Practice spelling and build your vocabulary.</p>
+      <button onclick="wordGame()">Play Now</button>
+    </article>
+    <article class="card">
+      <div class="icon">🧠</div>
+      <h3>Brain Boost</h3>
+      <p>Test your memory, patterns, and logic.</p>
+      <button onclick="brainGame()">Play Now</button>
+    </article>
+    <article class="card">
+      <div class="icon">🔬</div>
+      <h3>Science Quest</h3>
+      <p>Explore animals, space, nature, and science.</p>
+      <button onclick="scienceGame()">Play Now</button>
+    </article>
+    <article class="card">
+      <div class="icon">🌍</div>
+      <h3>World Explorer</h3>
+      <p>Discover places, landmarks, and geography.</p>
+      <button onclick="worldGame()">Play Now</button>
+    </article>
+    <article class="card">
+      <div class="icon">🎨</div>
+      <h3>Art Studio</h3>
+      <p>Draw, create, and explore your imagination.</p>
+      <button onclick="artGame()">Play Now</button>
+    </article>
+  </div>
+</section>
+
+<section id="worlds" class="worlds">
+  <div class="section-title">
+    <span>🗺️</span>
+    <div>
+      <h2>Explore the Worlds</h2>
+      <p>Complete games to unlock new adventures.</p>
+    </div>
+  </div>
+  <div class="world-grid">
+    <div>
+      🌳
+      <b>Math Meadow</b>
+      <small>Levels 1–5</small>
+    </div>
+    <div>
+      🏙️
+      <b>Reading City</b>
+      <small>Unlock at Level 5</small>
+    </div>
+    <div>
+      🚀
+      <b>Science Space</b>
+      <small>Unlock at Level 10</small>
+    </div>
+    <div>
+      🏝️
+      <b>History Island</b>
+      <small>Unlock at Level 15</small>
+    </div>
+  </div>
+</section>
+
+<section class="challenge">
+  <div>
+    <span class="pill">🔥 DAILY CHALLENGE</span>
+    <h2>Can you earn 50 XP today?</h2>
+    <p>Come back tomorrow for a new learning challenge.</p>
+  </div>
+  <div class="big-star">⭐</div>
+</section>
+
+<section id="parents" class="parents">
+  <h2>👨‍👩‍👧 Parents & Teachers</h2>
+  <p>
+    Malik's Learning World is designed around age-appropriate
+    educational play. A future parent dashboard can show learning
+    progress, completed activities, and achievements.
+  </p>
+</section>
+
+<section class="ad-space">
+  <small>ADVERTISEMENT</small>
+  <p>
+    Ad space — connect an approved child-directed advertising
+    provider after your site is ready.
+  </p>
+</section>
+</main>
+
+<footer>
+  <b>🌎 Malik's Learning World</b>
+  <p>Learn. Play. Explore.</p>
+  <small>© 2026 Malik's Learning World | <a href="privacy.html">Privacy Policy</a></small>
+</footer>
+
+<!-- Game Popup Modal -->
+<div id="modal" class="modal" hidden>
+  <div class="modal-box">
+    <button class="close" onclick="closeGame()">×</button>
+    <h2 id="modal-title">Game Title</h2>
+    <div id="modal-body">
+      <!-- Game content will render here dynamically via script.js -->
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
